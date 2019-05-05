@@ -2,14 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
     label{
         flex-basis: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 1.5rem;
         margin: 5px 0;
         input{
             font-size: 1.3rem;
+            background-color: rgb(197, 229, 248);
+            border: 2px solid rgb(87, 190, 250);
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 5px;
         }
     }
     button{

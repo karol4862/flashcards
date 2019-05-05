@@ -1,0 +1,15 @@
+.learnWriting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    section, input, button{
+        margin-top: 10vh;
+    }
+    @import 'section-element';
+    @import 'button-element';
+    input{
+        font-size: 1.8rem;
+        padding: 10px 5px;
+    }
+}

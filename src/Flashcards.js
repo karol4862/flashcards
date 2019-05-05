@@ -5,11 +5,14 @@ import './styles/Flashcards.scss';
 
 class Flashcards extends Component { 
     render() {
-        const {flashcards} = this.props;
-        const flashcardsList = flashcards.map(item => <Flashcard flashcards={flashcards}/>)
+        const {flashcards, handleButtonAdd, handleButtonRemove, addToIndex, indexElement} = this.props;
+        const flashcardsList = flashcards.map(item => <Flashcard key = {item.id} flashcard={item} handleButtonRemove={handleButtonRemove}/>)
         return (
             <div className="flashcards">
-                <AddFlashcard />
+                <AddFlashcard 
+                    handleButtonAdd = {handleButtonAdd}
+                    addToIndex = {addToIndex}
+                    indexElement = {indexElement}/>
                 <ul>
                     {flashcardsList}
                 </ul>

@@ -1,0 +1,8 @@
+.learn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @import 'section-element';
+    @import 'button-element';
+    font-family: 'Oswald', sans-serif;
+}

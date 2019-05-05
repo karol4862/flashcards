@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .App{
     background-color: rgb(228, 239, 241);
     min-height: 100vh;
@@ -13,11 +14,12 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     a{
         display: block;
         flex-basis: 25vw;
         height:25vw;
+        padding: 15px;
         background-color: rgb(125, 207, 255);
         border-radius: 10px;
         border: 2px solid rgb(60, 174, 240);
@@ -30,8 +32,71 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
     }
     
 }
 
+@media (min-width: 1281px) {
+  
+    html{
+        font-size: 22px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    html{
+        font-size: 22px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    html{
+        font-size: 18px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    html{
+        font-size: 16px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    
+  }

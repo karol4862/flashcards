@@ -5,8 +5,8 @@ const Main = () => {
     return ( 
         <div className="menu">
             <NavLink to="flashcards"><div  > Your flashcards</div></NavLink> 
-            <NavLink to="learnFlashcards"><div > Learn by flashcards</div></NavLink>
-            <NavLink to="learnWrite"><div> Learn by writting</div></NavLink>
+            <NavLink to="learnWords"><div > Learn by flashcards</div></NavLink>
+            <NavLink to="learnWriting"><div> Learn by writting</div></NavLink>
         </div>
         
     );
