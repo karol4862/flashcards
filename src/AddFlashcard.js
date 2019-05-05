@@ -15,17 +15,21 @@ class AddFlashcard extends Component {
     }
     
     handleButton = () => {
-        const item = {
-            id: this.props.indexElement,
-            front: this.state.front,
-            back: this.state.back
+        if(this.state.front && this.state.back){
+            const item = {
+                id: this.props.indexElement,
+                front: this.state.front,
+                back: this.state.back
+            }
+            this.props.handleButtonAdd(item);
+            this.setState({
+                front:'',
+                back: ''
+            })
+            this.props.addToIndex()
         }
-        this.props.handleButtonAdd(item);
-        this.setState({
-            front:'',
-            back: ''
-        })
-        this.props.addToIndex()
+        else alert("Inputs can't be empty")
+        
     }
     render() {
         return ( 
